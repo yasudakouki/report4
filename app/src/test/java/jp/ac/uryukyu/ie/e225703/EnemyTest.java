@@ -11,8 +11,9 @@ class EnemyTest {
         App classUnderTest = new App();
         assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
     }
-    @Test void attackTest() {
-        int defaultHeroHp = 100;
+    @Test 
+    void attackTest() {
+        int defaultHeroHp = 1000;
         Hero demoHero = new Hero("デモ勇者", defaultHeroHp, 100);
         Enemy slime = new Enemy("スライムもどき", 10, 100);
         for(int count=0; count<10; count++){
